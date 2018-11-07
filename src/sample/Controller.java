@@ -17,14 +17,16 @@ public class Controller
     public void textFieldKnap(ActionEvent actionEvent)
     {
 
-        this.textFieldString=textField.getText();
+
 
 
     }
 
     public void kommandoKnap(ActionEvent actionEvent)
     {
+        this.textFieldString=textField.getText();
         textArea.setText(textFieldString);
+        textField.clear();
 
     }
 }
